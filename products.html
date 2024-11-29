@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end fonts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Products</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <nav class="nav">
+          <div class="left">
+            <div class="logoWraper">
+              <div class="logo">
+                <img
+                  src="assets/library-outline-svgrepo-com.svg"
+                  alt="lybrary logo"
+                />
+              </div>
+              <span class="cyborg">Readers <br />Paradise</span>
+            </div>
+            <form action="#">
+              <input
+                type="text"
+                class="searchBar"
+                placeholder="Type something"
+              />
+            </form>
+          </div>
+
+          <ul class="navItmes">
+            <li class="navItem"><a href="/home.html">Home</a></li>
+            <li class="navItem"><a href="/aboutUs.html">About Us</a></li>
+            <li class="navItem"><a href="/products.html">Products</a></li>
+          </ul>
+        </nav>
+        <div class="hero">
+          <table id="books-table">
+            <thead>
+              <tr>
+                <th>رمز الكتاب</th>
+                <th>العنوان</th>
+                <th>السعر</th>
+                <th>التفاصيل</th>
+                <th>اختيار</th>
+              </tr>
+            </thead>
+            <tbody id="books-tbody"></tbody>
+          </table>
+
+          <button id="continueButton" class="button">متابعة</button>
+
+          <div
+            id="buyFormModal"
+            style="
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.5);
+            "
+          >
+            <div
+              style="
+                background-color: white;
+                margin: 50px auto;
+                padding: 20px;
+                width: 300px;
+                border-radius: 10px;
+              "
+            >
+              <h3>إدخال بياناتك</h3>
+              <form id="buyForm">
+                <label for="name">الاسم:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  pattern="[\u0600-\u06FF\s]+"
+                  style="width: 100%; margin-bottom: 10px"
+                  placeholder="الاسم باللغة العربية"
+                />
+
+                <label for="nationalId">الرقم الوطني:</label>
+                <input
+                  type="text"
+                  id="nationalId"
+                  name="nationalId"
+                  pattern="^(0[1-9]|1[0-5])[0-9]{9}$"
+                  required
+                  style="width: 100%; margin-bottom: 10px"
+                  placeholder="الرقم الوطني (11 خانة)"
+                />
+
+                <label for="dob">تاريخ الولادة:</label>
+                <input
+                  type="date"
+                  id="dob"
+                  name="dob"
+                  pattern="(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}"
+                  style="width: 100%; margin-bottom: 10px"
+                />
+
+                <label for="mobile">رقم الموبايل:</label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  pattern="((0)(93|94|95|96|98|99)([0-9]{7}))|((0)(92|95|96|97)([0-9]{7}))"
+                  style="width: 100%; margin-bottom: 10px"
+                  placeholder="رقم الموبايل"
+                />
+
+                <label for="email">الايميل:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  style="width: 100%; margin-bottom: 10px"
+                  placeholder="الايميل"
+                />
+
+                <button type="submit">إرسال</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="myFunctions.js"></script>
+  </body>
+</html>

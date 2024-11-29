@@ -1,0 +1,243 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  /* sizes */
+  --size-min: 10px;
+  --size-main: 25px;
+
+  --gap-main: 18 px;
+  --gap-mid: 24px;
+  --gap-max: 36px;
+
+  --margin-main: 18px;
+  --margin-mid: 24px;
+  --margin-max: 36px;
+
+  --padding-min: var(--size-min);
+  --padding-main: 18px;
+  --padding-mid: 24px;
+  --padding-max: 36px;
+
+  --width-min: 100px;
+  --width-mid: 150px;
+  --width-large: 200px;
+  --width-xlarge: 250px;
+  --width-xxlarge: 300px;
+
+  --hiegh-min: 25px;
+  --hiegh-mid: 50px;
+  --hiegh-large: 100px;
+  --hiegh-xlarge: 150px;
+  --hiegh-xxlarge: 300px;
+
+  /* fonts */
+  --font-size-small: 14px;
+  --font-size-main: 24px;
+  --font-size-l: 30px;
+  --font-size-xl: 35px;
+
+  --font-weight-main: 400;
+  --font-weight-mid: 700;
+  --font-weight-max: 900;
+
+  /* colors */
+  --color-main: #e2bbe9;
+  --color-lghtest: #eef5ff;
+  --color-light: #9b86bd;
+  --color-mid: #7776b3;
+  --color-dark: #5a639c;
+  --color-darkest: #240750;
+  --color-pink: #ec6090;
+}
+.container {
+  background-color: var(--color-darkest);
+  font-family: "Abril Fatface", serif;
+  font-weight: var(--font-weight-main);
+}
+.logoWraper img {
+  width: 100px;
+}
+.logoWraper {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-main);
+  color: var(--color-lghtest);
+  gap: var(--gap-main);
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-max);
+}
+.searchBar {
+  width: var(--width-xlarge);
+  height: calc(var(--hiegh-min) * 1.5);
+  border: none;
+  border-radius: calc(var(--size-min) * 1.5);
+  background-color: var(--color-lghtest);
+  color: var(--color-main);
+  padding-left: var(--padding-min);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70%;
+  height: var(--hiegh-xlarge);
+  margin: auto;
+}
+ul {
+  list-style: none;
+}
+.navItmes {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-max);
+}
+.navItem {
+  font-size: var(--font-size-main);
+  color: var(--color-main);
+  gap: var(--gap-main);
+}
+.hero {
+  background-color: var(--color-main);
+  width: 70%;
+  margin: auto;
+  border-radius: var(--size-main);
+  padding: var(--padding-max);
+  background-image: url(../assets/arc-modern-background-for-poster-book-vector-10153767.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo img {
+  filter: invert(51%) sepia(13%) saturate(1386%) hue-rotate(202deg)
+    brightness(92%) contrast(83%);
+}
+.addBook {
+  width: 85%;
+  background-color: var(--color-darkest);
+  background-repeat: no-repeat;
+
+  margin: auto;
+  height: 250px;
+  border-radius: var(--size-main);
+  font-size: var(--font-size-xl);
+  color: var(--color-main);
+  padding: var(--padding-main);
+  background-image: url(../assets/istockphoto-1166419449-1024x1024.jpg);
+  background-size: cover;
+}
+.addBook :nth-child(1) {
+  font-size: var(--font-size-small);
+}
+.addBook span {
+  color: var(--color-pink);
+}
+.button {
+  background-color: var(--color-pink);
+  color: var(--color-darkest);
+  height: var(--hiegh-mid);
+  width: var(--width-mid);
+  font-size: x-large;
+  margin-top: var(--margin-main);
+  font-weight: 900;
+  color: var(--color-darkest);
+  border: none;
+  border-radius: var(--size-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.studentsNames {
+  background-color: var(--color-darkest);
+
+  width: 85%;
+
+  margin: auto;
+  padding: var(--padding-main);
+
+  border-radius: var(--size-main);
+  margin-top: var(--margin-mid);
+}
+
+.flexWraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-main);
+  padding-left: var(--padding-main);
+  padding-right: var(--padding-main);
+}
+table {
+  margin: auto;
+  align-content: center;
+  width: 90%;
+  border-radius: 110px;
+  font-family: "Times New Roman", Times, serif;
+}
+th,
+td {
+  text-align: center;
+  border-radius: var(--font-size-small);
+
+  padding: 12px;
+}
+
+tr {
+  background-color: var(--color-main);
+}
+
+.aboutUs {
+  height: 50vh;
+  background-color: var(--color-darkest);
+  padding: var(--size-main);
+  border-radius: var(--font-size-small);
+
+  margin: 2rem auto;
+  max-width: 90%;
+  color: var(--color-lghtest);
+  font-family: "Times New Roman", Times, serif;
+  font-size: var(--font-size-main);
+}
+.contactUs {
+  color: var(--color-lghtest);
+  font-family: "Times New Roman", Times, serif;
+}
+#continueButton {
+  margin: auto;
+  margin-top: var(--font-size-main);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.addBook .button a {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+
+  padding: 10px 20px;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#continueButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--color-darkest);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#continueButton:hover {
+  background-color: var(--color-pink);
+  transform: scale(1.05);
+}
