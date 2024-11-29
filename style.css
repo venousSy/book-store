@@ -108,7 +108,7 @@ ul {
   margin: auto;
   border-radius: var(--size-main);
   padding: var(--padding-max);
-  background-image: url(../assets/arc-modern-background-for-poster-book-vector-10153767.avif);
+  background-image: url(assets/arc-modern-background-for-poster-book-vector-10153767.avif);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -127,7 +127,7 @@ ul {
   font-size: var(--font-size-xl);
   color: var(--color-main);
   padding: var(--padding-main);
-  background-image: url(../assets/istockphoto-1166419449-1024x1024.jpg);
+  background-image: url(assets/istockphoto-1166419449-1024x1024.jpg);
   background-size: cover;
 }
 .addBook :nth-child(1) {
