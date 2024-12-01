@@ -7,6 +7,7 @@ const books = [
     publisher: "دار النشر 1",
     category: "تعليمي",
     summary: "دليل شامل لتعلم البرمجة.",
+    image: "assets/books/0.webp",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const books = [
     publisher: "دار النشر 2",
     category: "تقني",
     summary: "مقدمة في تصميم المواقع.",
+    image: "assets/books/1.webp",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const books = [
     publisher: "دار النشر 3",
     category: "تقني",
     summary: "تعلم JavaScript للمتقدمين.",
+    image: "assets/books/2.webp",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const books = [
     publisher: "دار النشر 4",
     category: "تصميم",
     summary: "مقدمة في التصميم باستخدام CSS.",
+    image: "assets/books/3.webp",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const books = [
     publisher: "دار النشر 5",
     category: "تصميم",
     summary: "تعلم الأساسيات لتصميم UX/UI.",
+    image: "assets/books/4.webp",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const books = [
     publisher: "دار النشر 6",
     category: "مهني",
     summary: "مرجع شامل لتحسين مهارات البرمجة.",
+    image: "assets/books/5.webp",
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const books = [
     publisher: "دار النشر 7",
     category: "تقني",
     summary: "مدخل إلى عالم الذكاء الاصطناعي.",
+    image: "assets/books/6.webp",
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const books = [
     publisher: "دار النشر 8",
     category: "تقني",
     summary: "Python: لغة برمجة سهلة وفعالة.",
+    image: "assets/books/7.webp",
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ const books = [
     publisher: "دار النشر 9",
     category: "تقني",
     summary: "تعلم إنشاء ألعاب ثلاثية الأبعاد.",
+    image: "assets/books/8.webp",
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ const books = [
     publisher: "دار النشر 10",
     category: "بيانات",
     summary: "تعلم أساسيات تحليل البيانات.",
+    image: "assets/books/9.webp",
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ const books = [
     publisher: "دار النشر 11",
     category: "تقني",
     summary: "مقدمة في تطوير تطبيقات الهاتف.",
+    image: "assets/books/10.webp",
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ const books = [
     publisher: "دار النشر 12",
     category: "تعليمي",
     summary: "تعرف على أساسيات علوم الحاسوب.",
+    image: "assets/books/11.webp",
   },
 ];
 
@@ -144,13 +156,19 @@ function handleCheckboxToggle() {
           <td colspan="5" style="text-align: right; padding: 10px; background-color: #f9f9f9;">
             <div style="display: flex; gap: 20px; direction: rtl; align-items: center; justify-content: space-between;">
               
+             
+              <!-- Text Section -->
               <div>
                 <p><strong>الناشر:</strong> ${book.publisher}</p>
                 <p><strong>تصنيف الكتاب:</strong> ${book.category}</p>
                 <p><strong>ملخص:</strong> ${book.summary}</p>
                 <p><strong>التفاصيل:</strong> ${book.details}</p>
               </div>
-              
+               <!-- Image Section -->
+              <div style="flex-shrink: 0;">
+                <img src="${book.image}" alt="صورة الكتاب" style="width: 100px; height: auto; border-radius: 5px;">
+              </div>
+
             </div>
           </td>
         </tr>
